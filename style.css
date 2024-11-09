@@ -1,0 +1,40 @@
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#map {
+    height: 95vh;
+    width: 70%;
+    border: 3px solid #5c5c5c;
+}
+#townsList {
+    width: 20%;
+    max-height: 95vh;
+    overflow-y: auto;
+    border: 3px solid #5c5c5c;
+    padding-left: 10px;
+    font-family: Arial, sans-serif;
+}
+.overlay-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.marker {
+    position: absolute;
+}
+.marker text {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    fill: black;
+    font-weight: bold;
+}
+
+#reloadButton {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    border: 3px solid #5c5c5c;
+    background-color: #c4c4c4;
+}

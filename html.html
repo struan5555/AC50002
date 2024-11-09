@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Maps with D3 Overlay - Anchored Markers</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+
+        <div id="container">
+            
+            <button id="reloadButton" onclick="reloadData()">Reload Data</button>
+
+            <div id="map"></div>
+
+            <div id="townsList">
+                <h3>Towns On Screen</h3>
+                <ul id="visibleTowns"></ul>
+            </div>
+
+        </div>
+
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="script.js"></script>
+
+        <!-- api key -->
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhF1VuGkJfBprQXbJ71bmzW92dKDTvxJ0&callback=initMap">
+        </script>
+    </body>
+
+</html>
